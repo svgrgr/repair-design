@@ -4,11 +4,6 @@ const browserSync = require("browser-sync").create();
 var cssmin = require("gulp-cssmin");
 var rename = require("gulp-rename");
 
-gulp.task("hello", function (done) {
-  console.log("Привет, мир!");
-  done();
-});
-
 // Static server
 gulp.task("browser-sync", function () {
   browserSync.init({
