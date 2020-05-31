@@ -648,7 +648,7 @@ img {
   .modal__button {
     align-self: flex-end; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
   html {
     font-size: 12px; }
   .nav__item {
