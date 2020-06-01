@@ -419,6 +419,8 @@ img {
       line-height: 27px;
       text-align: center;
       color: #363636; }
+  .section_mobile-dark {
+    background-color: #fff; }
 
 .header {
   position: fixed;
@@ -660,7 +662,9 @@ img {
   .hero__instagram {
     display: none; }
   .hero__content {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .card__title {
+    font-size: 1.05rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -675,7 +679,13 @@ img {
     .design__section-title {
       color: #fff; }
     .design__card {
-      margin-bottom: 5.7rem; } }
+      margin-bottom: 5.7rem; }
+  .section_mobile-dark {
+    background-color: #252525; }
+  .section-title__heading {
+    color: #fff; }
+  .section-title__text {
+    color: #fff; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
