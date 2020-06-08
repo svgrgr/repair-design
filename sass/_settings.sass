@@ -13,8 +13,44 @@ img
 
 .section
   padding: 60px 0
+  &_dark
+    background-color: $dark
+    color: $light
+
   &-title
     text-align: center
+    
+    &_left
+      text-align: left
+    &__heading
+      font-family: 'Yeseva One', cursive
+      text-transform: uppercase
+      font-weight: normal
+      line-height: 138%
+      &_primary
+        color: $primary
+    &__word
+      display: flex
+      align-items: center
+      &::after
+        content: ''
+        width: 90px
+        height: 2px
+        background-color: $primary
+        margin-left: 2rem
+    
+    &__text
+      width: 77%
+      //margin: 25px auto 39px
+      font-family: 'Futura Book'
+      font-style: normal
+      font-weight: normal
+      font-size: 1.28rem
+      line-height: 2.07rem
+      max-width: 31.57rem
+      //text-align: center
+      //color: $grey
+ 
     &__image
       display: flex
       justify-content: center
@@ -24,20 +60,7 @@ img
         width: 32px
         height: 2px
         background-color: $primary
-        margin: 0 10px
-    &__heading
-      font-family: 'Yeseva One', cursive
-      text-transform: uppercase
-      font-weight: normal
-    &__text
-      width: 77%
-      margin: 25px auto 39px
-      font-family: 'Futura Book'
-      font-style: normal
-      font-weight: normal
-      font-size: 20px
-      line-height: 27px
-      text-align: center
-      color: $grey
+        margin: 0 10px    
+
   &_mobile-dark
     background-color: $light
