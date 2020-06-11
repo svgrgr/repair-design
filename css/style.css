@@ -437,6 +437,16 @@ img {
       font-size: 1.28rem;
       line-height: 2.07rem;
       max-width: 31.57rem; }
+      .section-title__text_center {
+        width: 77%;
+        margin: 25px auto 39px;
+        font-family: 'Futura Book';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.28rem;
+        line-height: 2.07rem;
+        max-width: 31.57rem;
+        text-align: center; }
     .section-title__image {
       display: flex;
       justify-content: center;
