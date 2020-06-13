@@ -901,9 +901,11 @@ img {
   .section_mobile-dark {
     background-color: #252525; }
   .section-title__heading {
-    color: #fff; }
+    color: #E3B873; }
   .section-title__text {
-    color: #fff; } }
+    color: #fff; }
+  .section-title__word::after {
+    display: none; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -924,7 +926,13 @@ img {
   .hero__button {
     display: block;
     min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
+    margin-bottom: 1.85rem; }
+  .footer__form {
+    flex-direction: column; }
+  .footer__button {
+    width: 100%; }
+  .policy__label_center {
+    justify-content: left; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
