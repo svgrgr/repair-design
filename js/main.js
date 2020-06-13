@@ -52,4 +52,117 @@ $(document).ready(function () {
 
   new WOW().init();
 
+  //modal form validation
+  $('.modal__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+
+      userPhone: {
+        required: true,
+        minlength: 18
+      },
+
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      }
+    },
+
+    //messages
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Введите имя не короче 2 букв",
+        maxlength: "Введите имя не длиннее 15 букв"
+      },
+
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Телефон введен не полностью"
+      },
+
+      userEmail: {
+        required: "Заполните поле",
+        email: "Введите корректный email"
+      }
+    }
+
+  });
+
+
+  //control form validation
+  $('.control__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 18
+      }
+    }, //messages
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Введите имя не короче 2 букв",
+        maxlength: "Введите имя не длиннее 15 букв"
+      },
+
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Телефон введен не полностью"
+      }
+
+    }
+
+  });
+
+  //footer form validation
+  $('.footer__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 18
+      }
+
+    },
+
+    //messages
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Введите имя не короче 2 букв",
+        maxlength: "Введите имя не длиннее 15 букв"
+      },
+
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Телефон введен не полностью"
+      }
+
+    }
+
+  });
+
+
+  // mask for phone number
+  $('[type=tel]').mask('+7 (000) 000-00-00', { placeholder: "+7 (___) ___-__-__" });
 });

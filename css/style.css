@@ -354,6 +354,18 @@ template {
   .input_light::placeholder {
     color: #fff; }
 
+/*deviation from lesson - start*/
+.input-grey {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  font-size: 1.285rem;
+  color: #363636;
+  padding: 0.5rem 0; }
+  .input-grey_light::placeholder {
+    color: #fff; }
+
+/*deviation from lesson - end*/
 .policy__checkbox {
   opacity: 0;
   visibility: hidden; }
@@ -375,6 +387,12 @@ template {
     margin-right: 0.64rem; }
   .policy__label_center {
     justify-content: center; }
+
+label.invalid {
+  color: tomato; }
+
+input.invalid {
+  border-bottom: 1px solid tomato; }
 
 .container {
   width: 85%;
@@ -839,10 +857,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input {
+  .modal__input-group {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3.428rem; }
-    .modal__input:last-of-type {
-      margin-bottom: 1rem; }
+  .modal__input:last-of-type {
+    margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
   .modal__button {
