@@ -815,6 +815,39 @@ img {
   .footer__menu {
     background-color: #131313;
     padding: 4.285rem 0; }
+  .footer__map {
+    margin-bottom: 4rem; }
+
+.address-contacts {
+  width: 60%;
+  margin: auto;
+  text-align: center; }
+
+.address {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursive;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #E3B873; }
+
+.contacts {
+  display: flex;
+  justify-content: center; }
+
+.email, .insta {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 1.2rem;
+  margin: 1rem;
+  margin-bottom: 3.5rem;
+  cursor: pointer; }
+
+.email {
+  background: #E3B873 url(../img/envelope.svg) center no-repeat; }
+
+.insta {
+  background: #E3B873 url(../img/instagram-logo.svg) center no-repeat; }
 
 .modal {
   opacity: 0;
