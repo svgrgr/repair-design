@@ -53,7 +53,9 @@
   &__checkbox
     opacity: 0
     visibility: hidden
-    &:checked +
+    margin-bottom: 1.5rem
+    margin-left: -1.1rem
+    &:checked ~
       .policy__label
         &::before
           background: $primary url('../img/check.svg') no-repeat center
@@ -75,6 +77,10 @@
 label
   &.invalid
     color: tomato
+    
+    
 input
   &.invalid
     border-bottom: 1px solid tomato
+
+  

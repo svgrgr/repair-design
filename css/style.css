@@ -368,8 +368,10 @@ template {
 /*deviation from lesson - end*/
 .policy__checkbox {
   opacity: 0;
-  visibility: hidden; }
-  .policy__checkbox:checked + .policy__label::before {
+  visibility: hidden;
+  margin-bottom: 1.5rem;
+  margin-left: -1.1rem; }
+  .policy__checkbox:checked ~ .policy__label::before {
     background: #E3B873 url("../img/check.svg") no-repeat center; }
 
 .policy__label {

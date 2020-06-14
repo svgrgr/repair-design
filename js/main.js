@@ -72,7 +72,9 @@ $(document).ready(function () {
       userEmail: {
         required: true,
         email: true
-      }
+      },
+
+      policycheckbox3: "required"
     },
 
     //messages
@@ -85,13 +87,16 @@ $(document).ready(function () {
 
       userPhone: {
         required: "Заполните поле",
-        minlength: "Телефон введен не полностью"
+        minlength: "Телефон введён не полностью"
       },
 
       userEmail: {
         required: "Заполните поле",
         email: "Введите корректный email"
-      }
+      },
+
+      policycheckbox3: "Необходимо подтвердить согласие на обработку данных"
+
     }
 
   });
@@ -107,10 +112,14 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
+
       userPhone: {
         required: true,
         minlength: 18
-      }
+      },
+
+      policycheckbox: "required"
+
     }, //messages
     messages: {
       userName: {
@@ -121,8 +130,10 @@ $(document).ready(function () {
 
       userPhone: {
         required: "Заполните поле",
-        minlength: "Телефон введен не полностью"
-      }
+        minlength: "Телефон введён не полностью"
+      },
+
+      policycheckbox: "Необходимо подтвердить согласие на обработку данных"
 
     }
 
@@ -141,7 +152,9 @@ $(document).ready(function () {
       userPhone: {
         required: true,
         minlength: 18
-      }
+      },
+
+      policycheckbox2: "required"
 
     },
 
@@ -155,8 +168,10 @@ $(document).ready(function () {
 
       userPhone: {
         required: "Заполните поле",
-        minlength: "Телефон введен не полностью"
-      }
+        minlength: "Телефон введён не полностью"
+      },
+
+      policycheckbox2: "Необходимо подтвердить согласие на обработку данных"
 
     }
 
