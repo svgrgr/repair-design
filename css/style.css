@@ -396,6 +396,56 @@ label.invalid {
 input.invalid {
   border-bottom: 1px solid tomato; }
 
+#user-name-error {
+  position: absolute;
+  left: 0;
+  top: 4.5rem; }
+
+#user-phone-error {
+  position: absolute;
+  left: 0;
+  top: 4.5rem; }
+
+#policycheckbox-error {
+  position: absolute;
+  left: 18.143rem;
+  top: 4.2rem; }
+
+#user-name2-error {
+  position: absolute;
+  left: 0;
+  top: 3.9rem; }
+
+#user-phone2-error {
+  position: absolute;
+  left: 0;
+  top: 3.9rem; }
+
+#policycheckbox2-error {
+  position: absolute;
+  left: 9.214rem;
+  top: 4.2rem; }
+
+#user-name3-error {
+  position: absolute;
+  left: 0;
+  top: 3.9rem; }
+
+#user-phone3-error {
+  position: absolute;
+  left: 0;
+  top: 3.9rem; }
+
+#user-email3-error {
+  position: absolute;
+  left: 0;
+  top: 3.9rem; }
+
+#policycheckbox3-error {
+  position: absolute;
+  left: 0;
+  top: 4.2rem; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -711,17 +761,19 @@ img {
   margin: auto; }
 
 .control__input-group {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-basis: 30%; }
 
 .control__label {
-  margin-bottom: -7px; }
+  margin-bottom: 0.3rem; }
 
 .control__button {
   padding: 1.2857rem 4.785rem; }
 
 .control__policy {
+  position: relative;
   flex-basis: 100%;
   margin-top: 1.2rem; }
   .control__policy-label {
@@ -799,6 +851,7 @@ img {
   .footer__input {
     padding-top: 0.3rem; }
     .footer__input-group {
+      position: relative;
       display: flex;
       flex-direction: column;
       flex-basis: 45%;
@@ -807,6 +860,7 @@ img {
         flex-basis: 100%;
         margin-bottom: 2rem; }
   .footer__policy {
+    position: relative;
     flex-basis: 100%;
     margin-bottom: 3.6rem; }
   .footer__button {
@@ -820,6 +874,7 @@ img {
 
 .address-contacts {
   width: 60%;
+  min-width: 430px;
   margin: auto;
   text-align: center; }
 
@@ -893,12 +948,14 @@ img {
     display: flex;
     flex-direction: column; }
   .modal__input-group {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-bottom: 3.428rem; }
   .modal__input:last-of-type {
     margin-bottom: 1rem; }
   .modal__policy {
+    position: relative;
     margin-bottom: 2.7rem; }
   .modal__button {
     align-self: flex-end; }
@@ -967,7 +1024,10 @@ img {
   .footer__button {
     width: 100%; }
   .policy__label_center {
-    justify-content: left; } }
+    justify-content: left; }
+  .address-contacts {
+    width: 100%;
+    min-width: unset; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
