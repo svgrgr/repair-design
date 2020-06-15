@@ -1027,7 +1027,9 @@ img {
     justify-content: left; }
   .address-contacts {
     width: 100%;
-    min-width: unset; } }
+    min-width: unset; }
+  #policycheckbox2-error {
+    left: 0; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
