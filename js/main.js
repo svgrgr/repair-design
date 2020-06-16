@@ -97,6 +97,22 @@ $(document).ready(function () {
 
       policycheckbox3: "Необходимо подтвердить согласие на обработку данных"
 
+    },
+
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          modal.removeClass('modal_visible'); //- только для модального окна - скрываем модальное окно
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
     }
 
   });
@@ -135,6 +151,22 @@ $(document).ready(function () {
 
       policycheckbox: "Необходимо подтвердить согласие на обработку данных"
 
+    },
+
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          //modal.removeClass('modal_visible'); - только для модального окна - скрываем модальное окно
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
     }
 
   });
@@ -173,6 +205,22 @@ $(document).ready(function () {
 
       policycheckbox2: "Необходимо подтвердить согласие на обработку данных"
 
+    },
+
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+          $(form)[0].reset();
+          //modal.removeClass('modal_visible'); - только для модального окна - скрываем модальное окно
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
     }
 
   });
