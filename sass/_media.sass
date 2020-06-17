@@ -33,14 +33,46 @@
     &__card
       margin-bottom: 5.7rem
   .section
-    &_mobile-dark
+    &_mobile
       background-color: $dark-mobile
     &-title__heading
-      color: $primary
+      color: $light
+    &-title__heading_types
+      color: $black
     &-title__text
+      color: $light
+    &-title__text_center
       color: $light
     &-title__word::after
       display: none
+    &_dark
+      background-color: $dark-mobile
+  .swiper-slide
+    margin-top: 2.857rem
+  .control__text
+    color: $light
+  .control__form
+    flex-direction: column
+    width: 90%
+  .control_input
+    color: $light
+  .control__policy-label
+    justify-content: left
+    color: $light
+  .control__label
+    color: $half-white
+  .input-grey
+    border-bottom: 1px solid $light  
+    color: $light
+  .input-grey::placeholder
+    color: #fff
+  .control__input
+    margin-bottom: 4.5rem
+  .control__button 
+    order: 1
+  .control__policy
+    margin-top: -4rem
+    margin-bottom: 4.429rem
 
 
   
@@ -73,6 +105,10 @@
       flex-direction: column
     &__button
       width: 100%
+    background: $dark-mobile
+  .footer__wrap
+    background-color: $dark-mobile
+
   .policy__label_center
     justify-content: left
   .address-contacts

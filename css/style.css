@@ -530,7 +530,7 @@ img {
         height: 2px;
         background-color: #E3B873;
         margin: 0 10px; }
-  .section_mobile-dark {
+  .section_mobile {
     background-color: #fff; }
 
 .header {
@@ -990,14 +990,46 @@ img {
       color: #fff; }
     .design__card {
       margin-bottom: 5.7rem; }
-  .section_mobile-dark {
+  .section_mobile {
     background-color: #252525; }
   .section-title__heading {
-    color: #E3B873; }
+    color: #fff; }
+  .section-title__heading_types {
+    color: #181818; }
   .section-title__text {
     color: #fff; }
+  .section-title__text_center {
+    color: #fff; }
   .section-title__word::after {
-    display: none; } }
+    display: none; }
+  .section_dark {
+    background-color: #252525; }
+  .swiper-slide {
+    margin-top: 2.857rem; }
+  .control__text {
+    color: #fff; }
+  .control__form {
+    flex-direction: column;
+    width: 90%; }
+  .control_input {
+    color: #fff; }
+  .control__policy-label {
+    justify-content: left;
+    color: #fff; }
+  .control__label {
+    color: rgba(255, 255, 255, 0.5); }
+  .input-grey {
+    border-bottom: 1px solid #fff;
+    color: #fff; }
+  .input-grey::placeholder {
+    color: #fff; }
+  .control__input {
+    margin-bottom: 4.5rem; }
+  .control__button {
+    order: 1; }
+  .control__policy {
+    margin-top: -4rem;
+    margin-bottom: 4.429rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -1019,10 +1051,14 @@ img {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem; }
-  .footer__form {
-    flex-direction: column; }
-  .footer__button {
-    width: 100%; }
+  .footer {
+    background: #252525; }
+    .footer__form {
+      flex-direction: column; }
+    .footer__button {
+      width: 100%; }
+  .footer__wrap {
+    background-color: #252525; }
   .policy__label_center {
     justify-content: left; }
   .address-contacts {
