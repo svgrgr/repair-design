@@ -15,6 +15,26 @@
       margin-left: 0
   .card__title
     font-size: 1.05rem
+  .footer__menu
+    display: none
+  .button:hover
+    cursor: unset
+  .button_primary:hover
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2)
+  .logo:hover
+    color: $primary
+  .nav__item:hover
+    color: $light
+  .contacts__phone:hover
+    color: $primary
+  .hero__scroll-down:hover
+    color: $light
+  .instagram__link:hover
+    color: $primary
+  .email:hover
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0)
+  .insta:hover
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0)
 
 @media screen and ( max-width: 760px )
   .row
@@ -34,6 +54,7 @@
       margin-bottom: 5.7rem
   .section
     &_mobile
+      padding-bottom: 2.7rem
       background-color: $dark-mobile
     &-title__heading
       color: $light
@@ -49,33 +70,43 @@
       background-color: $dark-mobile
   .swiper-slide
     margin-top: 2.857rem
-  .control__text
-    color: $light
-  .control__form
-    flex-direction: column
-    width: 90%
-  .control_input
-    color: $light
-  .control__policy-label
-    justify-content: left
-    color: $light
-  .control__label
-    color: $half-white
+  .control
+    &__text
+      color: $light
+    &__form
+      flex-direction: column
+      width: 90%
+    &_input
+      color: $light
+      margin-bottom: 4.5rem
+    &__policy-label
+      justify-content: left
+      color: $light
+    &__label
+      color: $half-white
+    &__button 
+      position: absolute
+      width: 100%
+      top: 22.5rem
+    &__policy
+      margin-top: -4rem
+      margin-bottom: 4.429rem
+
+
   .input-grey
     border-bottom: 1px solid $light  
     color: $light
   .input-grey::placeholder
     color: #fff
-  .control__input
-    margin-bottom: 4.5rem
-  .control__button 
-    order: 1
-  .control__policy
-    margin-top: -4rem
-    margin-bottom: 4.429rem
 
 
-  
+  #policycheckbox-error
+    position: absolute
+    left: 0
+    top: 4.7rem
+
+  .types__card
+    margin-bottom: 20rem
           
 
 @media screen and ( max-width: 570px )
@@ -105,7 +136,7 @@
       flex-direction: column
     &__button
       width: 100%
-    background: $dark-mobile
+      background: $dark-mobile
   .footer__wrap
     background-color: $dark-mobile
 
@@ -117,7 +148,7 @@
   #policycheckbox2-error
     left: 0 
 
-@media screen and ( max-height: 520px )
+@media screen and ( max-height: 690px )
   .hero
     &__scroll-down
       display: none

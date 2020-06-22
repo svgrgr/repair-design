@@ -412,17 +412,17 @@ input.invalid {
 #user-name-error {
   position: absolute;
   left: 0;
-  top: 4.5rem; }
+  top: 4.3rem; }
 
 #user-phone-error {
   position: absolute;
   left: 0;
-  top: 4.5rem; }
+  top: 4.3rem; }
 
 #policycheckbox-error {
   position: absolute;
   left: 18.143rem;
-  top: 4.2rem; }
+  top: 4.7rem; }
 
 #user-name2-error {
   position: absolute;
@@ -544,6 +544,7 @@ img {
         background-color: #E3B873;
         margin: 0 10px; }
   .section_mobile {
+    padding-bottom: 0rem;
     background-color: #fff; }
 
 .header {
@@ -559,11 +560,15 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .menu__logo {
+    text-decoration: none; }
 
 .logo {
   font-size: 1.075rem;
   color: #E3B873;
   text-transform: uppercase; }
+  .logo:hover {
+    color: #fff; }
 
 .nav__item {
   color: #fff;
@@ -578,7 +583,11 @@ img {
   color: #E3B873; }
 
 .contacts__phone {
-  margin-right: 45px; }
+  margin-right: 45px;
+  line-height: 2.9rem;
+  text-decoration: none; }
+  .contacts__phone:hover {
+    color: #fff; }
 
 .hero {
   position: relative;
@@ -654,6 +663,8 @@ img {
       border: 2px solid #E3B873;
       border-radius: 50%;
       margin-left: 12px; }
+    .hero__scroll-down:hover {
+      color: #E3B873; }
 
 .instagram {
   display: flex;
@@ -675,6 +686,8 @@ img {
       height: 1px;
       background-color: #E3B873;
       margin-left: 8px; }
+    .instagram__link:hover {
+      color: #fff; }
 
 .title {
   font-family: 'Yeseva One', cursive;
@@ -750,6 +763,7 @@ img {
     background-color: rgba(0, 0, 0, 0.8); }
 
 .control__text {
+  width: 90%;
   max-width: 40.785rem;
   margin: auto;
   margin-bottom: 4.285rem;
@@ -767,6 +781,7 @@ img {
     border-radius: 30px; }
 
 .control__form {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -794,7 +809,8 @@ img {
 
 .video__play {
   position: relative;
-  margin: auto; }
+  margin: auto;
+  cursor: pointer; }
 
 .types {
   padding-bottom: 30rem; }
@@ -883,7 +899,10 @@ img {
     background-color: #131313;
     padding: 4.285rem 0; }
   .footer__map {
-    margin-bottom: 4rem; }
+    width: 85%;
+    max-width: 63.07rem;
+    padding-bottom: 4rem;
+    margin: auto; }
 
 .address-contacts {
   width: 60%;
@@ -897,7 +916,8 @@ img {
   font-family: 'Yeseva One', cursive;
   font-size: 1.5rem;
   line-height: 2rem;
-  color: #E3B873; }
+  color: #E3B873;
+  text-decoration: none; }
 
 .contacts {
   display: flex;
@@ -910,12 +930,19 @@ img {
   margin: 1rem;
   margin-bottom: 3.5rem;
   cursor: pointer; }
+  .email:hover, .insta:hover {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.4);
+    transition: box-shadow 0.3s; }
 
 .email {
   background: #E3B873 url(../img/envelope.svg) center no-repeat; }
 
 .insta {
   background: #E3B873 url(../img/instagram-logo.svg) center no-repeat; }
+
+.map {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 .modal {
   opacity: 0;
@@ -987,7 +1014,27 @@ img {
   .hero__content {
     margin-left: 0; }
   .card__title {
-    font-size: 1.05rem; } }
+    font-size: 1.05rem; }
+  .footer__menu {
+    display: none; }
+  .button:hover {
+    cursor: unset; }
+  .button_primary:hover {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2); }
+  .logo:hover {
+    color: #E3B873; }
+  .nav__item:hover {
+    color: #fff; }
+  .contacts__phone:hover {
+    color: #E3B873; }
+  .hero__scroll-down:hover {
+    color: #fff; }
+  .instagram__link:hover {
+    color: #E3B873; }
+  .email:hover {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0); }
+  .insta:hover {
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0); } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -1004,6 +1051,7 @@ img {
     .design__card {
       margin-bottom: 5.7rem; }
   .section_mobile {
+    padding-bottom: 2.7rem;
     background-color: #252525; }
   .section-title__heading {
     color: #fff; }
@@ -1025,12 +1073,20 @@ img {
     flex-direction: column;
     width: 90%; }
   .control_input {
-    color: #fff; }
+    color: #fff;
+    margin-bottom: 4.5rem; }
   .control__policy-label {
     justify-content: left;
     color: #fff; }
   .control__label {
     color: rgba(255, 255, 255, 0.5); }
+  .control__button {
+    position: absolute;
+    width: 100%;
+    top: 22.5rem; }
+  .control__policy {
+    margin-top: -4rem;
+    margin-bottom: 4.429rem; }
   .input-grey {
     border-bottom: 1px solid #fff;
     color: #fff; }
@@ -1042,13 +1098,12 @@ img {
     color: #fff; }
   .input-grey::placeholder {
     color: #fff; }
-  .control__input {
-    margin-bottom: 4.5rem; }
-  .control__button {
-    order: 1; }
-  .control__policy {
-    margin-top: -4rem;
-    margin-bottom: 4.429rem; } }
+  #policycheckbox-error {
+    position: absolute;
+    left: 0;
+    top: 4.7rem; }
+  .types__card {
+    margin-bottom: 20rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
@@ -1070,12 +1125,11 @@ img {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem; }
-  .footer {
+  .footer__form {
+    flex-direction: column; }
+  .footer__button {
+    width: 100%;
     background: #252525; }
-    .footer__form {
-      flex-direction: column; }
-    .footer__button {
-      width: 100%; }
   .footer__wrap {
     background-color: #252525; }
   .policy__label_center {
@@ -1086,6 +1140,6 @@ img {
   #policycheckbox2-error {
     left: 0; } }
 
-@media screen and (max-height: 520px) {
+@media screen and (max-height: 690px) {
   .hero__scroll-down {
     display: none; } }

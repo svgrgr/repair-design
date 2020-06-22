@@ -17,17 +17,15 @@
   <header class="header">
     <div class="container">
       <div class="menu">
-        <div class="logo menu__logo wow animate__animated animate__pulse">Repair Design
-          Project</div>
-        <!-- /.logo -->
+        <a href="#mainpage" class="logo menu__logo wow animate__animated animate__pulse">Repair Design Project</a>
 
         <nav class="nav menu__nav wow animate__animated animate__bounceInDown">
-          <a href="#" class="nav__item">Главная</a>
-          <a href="#" class="nav__item">Проекты</a>
+          <a href="#mainpage" class="nav__item">Главная</a>
+          <a href="#projectspage" class="nav__item">Проекты</a>
           <a href="#" class="nav__item">Замер</a>
           <a href="#" class="nav__item">Команда</a>
           <a href="#" class="nav__item">Отзывы</a>
-          <a href="#" class="nav__item">Контакты</a>
+          <a href="#contactspage" class="nav__item">Контакты</a>
         </nav>
         <!-- /.nav -->
 
@@ -46,7 +44,7 @@
 
   <main>
 
-    <section class="hero">
+    <section class="hero" id="mainpage">
       <div class="instagram hero__instagram">
         <a href="#" class="instagram__link">Instagram</a>
       </div><!-- /.instagram hero__instagram -->
@@ -77,11 +75,11 @@
 
         </div><!-- /.hero__content -->
       </div><!-- /.container -->
-      <a href="#" class="hero__scroll-down">Листайте вниз</a>
+      <a href="#projectspage" class="hero__scroll-down">Листайте вниз</a>
     </section>
     <!-- /.hero -->
 
-    <section class="section section_dark projects">
+    <section class="section section_dark projects" id="projectspage">
       <div class="container">
         <div class="row">
           <div class="col-50">
@@ -232,7 +230,8 @@
           <!-- /.section-title__image -->
         </div>
         <!-- /.section-title -->
-        <div class="control__video video">
+        <div class="control__video video" id="player">
+          <script src="https://www.youtube.com/iframe_api"></script>
           <img src="img/play-icon.svg" alt="play icon" class="video__play">
 
         </div>
@@ -572,7 +571,7 @@
             <label for="policycheckbox2" class="policy__label policy__label_center">я соглашаюсь на обработку
               данных</label>
           </div>
-          <button class="button button_primary footer__button">Отправить</button>
+          <button class="button button_primary footer__button" id="contactspage">Отправить</button>
 
         </form>
         <!-- /.form footer__form -->
@@ -582,13 +581,13 @@
 
       <div class="address-contacts">
         <p class="address">
-          Нижний Новгород, ул. Пискунова, д.41<br>Телефон: +7 (831) 4585944
-        </p>
+          Нижний Новгород, ул.&nbsp;Пискунова,&nbsp;д.41<br>
+          <a href="tel:+79997683299" class="address">Телефон: +7&nbsp;(831)&nbsp;458&nbsp;59&nbsp;44</a></p>
         <!-- /.address -->
 
         <div class="contacts">
-          <div class="email"></div>
-          <div class="insta"></div>
+          <a class="email" href="mailto: info@design.ru"></a>
+          <a class="insta" href="https://www.instagram.com/screen_saver_000/"></a>
         </div>
         <!-- /.contacts -->
 
@@ -609,17 +608,15 @@
     <div class="footer__menu">
       <div class="container">
         <div class="menu">
-          <div class="logo menu__logo wow animate__animated animate__pulse">Repair Design
-            Project</div>
-          <!-- /.logo -->
+          <a href="#mainpage" class="logo menu__logo wow animate__animated animate__pulse">Repair Design Project</a>
 
           <nav class="nav menu__nav wow animate__animated animate__bounceInDown">
-            <a href="#" class="nav__item">Главная</a>
-            <a href="#" class="nav__item">Проекты</a>
+            <a href="#mainpage" class="nav__item">Главная</a>
+            <a href="#projectspage" class="nav__item">Проекты</a>
             <a href="#" class="nav__item">Замер</a>
             <a href="#" class="nav__item">Команда</a>
             <a href="#" class="nav__item">Отзывы</a>
-            <a href="#" class="nav__item">Контакты</a>
+            <a href="#contactspage" class="nav__item">Контакты</a>
           </nav>
           <!-- /.nav -->
 

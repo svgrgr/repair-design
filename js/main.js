@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   closeBtn.addEventListener('click', switchModal);
 
-});
-*/
+});*/
+
 
 $(document).ready(function () {
   var modal = $(".modal"),
@@ -27,10 +27,27 @@ $(document).ready(function () {
   modalBtn.on('click', function () {
     modal.toggleClass('modal_visible');
   });
+
+
   closeBtn.on('click', function () {
     modal.toggleClass('modal_visible')
   });
 
+
+  //modal closure by Esc-button
+  document.addEventListener('keydown', function (e) {
+    if (e.keyCode === 27) modal.removeClass('modal_visible');
+  });
+  //modal closure by Esc-button
+
+  //modal closure by click on elsewhere
+  document.onclick = function (e) {
+    if (event.target.className == 'modal modal_visible') modal.toggleClass('modal_visible');
+  };
+  //modal closure by click on elsewhere
+
+
+  //slider
   var mySwiper = new Swiper('.swiper-container', {
     loop: true,
     pagination: {
@@ -227,5 +244,36 @@ $(document).ready(function () {
 
 
   // mask for phone number
-  $('[type=tel]').mask('+7 (000) 000-00-00', { placeholder: "+7 (___) ___-__-__" });
+  $('[type=tel]').mask('+7 (000) 000-00-00', { placeholder: "Ваш номер телефона:" });
+
+
+  $('a[href^="#"]').click(function () {
+    var target = $(this).attr('href');
+    $('html, body').animate({ scrollTop: $(target).offset().top }, 1200);
+    return false;
+  });
+
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+
+    player = new YT.Player('player', {
+      height: '465',
+      width: '100%',
+      videoId: 'LZOzpBhzb4I',
+      events: {
+        'onReady': videoPlay,
+
+      }
+    });
+
+  })
+
+  function videoPlay(event) {
+    event.target.playVideo();
+  }
+
 });
+
+
+
+

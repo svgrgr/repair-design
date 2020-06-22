@@ -44,7 +44,12 @@
     background-color: $dark    
     padding: 4.285rem 0
   &__map
-    margin-bottom: 4rem
+    width: 85%
+    max-width: 63.07rem
+    padding-bottom: 4rem
+    margin: auto
+    
+    
 .address-contacts
   width: 60%
   min-width: 430px
@@ -57,9 +62,14 @@
   font-size: 1.5rem
   line-height: 2rem
   color: $primary
+  text-decoration: none
+  
 .contacts 
   display: flex
   justify-content: center
+  
+
+
 .email, .insta
   width: 2.4rem
   height: 2.4rem
@@ -67,7 +77,15 @@
   margin: 1rem
   margin-bottom: 3.5rem
   cursor: pointer
+  &:hover
+    box-shadow: 0px 5px 15px rgba($primary, 0.4)
+    transition: box-shadow 0.3s
+
 .email
   background: $primary url(../img/envelope.svg) center no-repeat
+  
 .insta
   background: $primary url(../img/instagram-logo.svg) center no-repeat
+  
+.map
+  filter: grayscale(100%)
