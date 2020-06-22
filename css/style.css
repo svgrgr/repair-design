@@ -489,7 +489,7 @@ img {
   max-width: 100%; }
 
 .section {
-  padding: 60px 0; }
+  padding: 4.285rem; }
   .section_dark {
     background-color: #131313;
     color: #fff; }
@@ -531,7 +531,7 @@ img {
         font-weight: normal;
         font-size: 1.28rem;
         line-height: 2.07rem;
-        max-width: 31.57rem;
+        max-width: 47.57rem;
         text-align: center; }
     .section-title__image {
       display: flex;
@@ -813,7 +813,8 @@ img {
   cursor: pointer; }
 
 .types {
-  padding-bottom: 30rem; }
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
   .types__section-title {
     margin-bottom: 2rem; }
 
@@ -1000,6 +1001,12 @@ img {
   .modal__button {
     align-self: flex-end; }
 
+.design__section-title {
+  margin-bottom: 2.78rem; }
+
+.design-project {
+  margin-bottom: 30rem; }
+
 @media screen and (max-width: 1300px) {
   html {
     font-size: 12px; }
@@ -1037,11 +1044,15 @@ img {
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0); } }
 
 @media screen and (max-width: 760px) {
+  body {
+    background-color: #252525; }
   .row {
     flex-direction: column;
     align-items: center; }
-  .types__card {
-    margin-bottom: 5rem; }
+  .types {
+    background-color: #fff; }
+    .types__card {
+      margin-bottom: 5rem; }
   .card__text {
     margin-left: 0; }
   .design {
@@ -1054,11 +1065,13 @@ img {
     padding-bottom: 2.7rem;
     background-color: #252525; }
   .section-title__heading {
-    color: #fff; }
+    color: #E3B873;
+    font-size: 1.571rem; }
   .section-title__heading_types {
     color: #181818; }
   .section-title__text {
-    color: #fff; }
+    color: #fff;
+    font-size: 1rem; }
   .section-title__text_center {
     color: #fff; }
   .section-title__word::after {
@@ -1072,7 +1085,7 @@ img {
   .control__form {
     flex-direction: column;
     width: 90%; }
-  .control_input {
+  .control__input {
     color: #fff;
     margin-bottom: 4.5rem; }
   .control__policy-label {
@@ -1102,7 +1115,9 @@ img {
     position: absolute;
     left: 0;
     top: 4.7rem; }
-  .types__card {
+  .col-50 {
+    width: 100%; }
+  .design-project {
     margin-bottom: 20rem; } }
 
 @media screen and (max-width: 570px) {
@@ -1125,11 +1140,12 @@ img {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem; }
-  .footer__form {
-    flex-direction: column; }
-  .footer__button {
-    width: 100%;
+  .footer {
     background: #252525; }
+    .footer__form {
+      flex-direction: column; }
+    .footer__button {
+      width: 100%; }
   .footer__wrap {
     background-color: #252525; }
   .policy__label_center {
@@ -1138,7 +1154,11 @@ img {
     width: 100%;
     min-width: unset; }
   #policycheckbox2-error {
-    left: 0; } }
+    left: 0; }
+  .header {
+    background-color: #252525; }
+  .section-title__text_center {
+    width: 100%; } }
 
 @media screen and (max-height: 690px) {
   .hero__scroll-down {

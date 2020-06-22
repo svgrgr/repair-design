@@ -272,6 +272,11 @@ $(document).ready(function () {
     event.target.playVideo();
   }
 
+  /*$('.map').on('click', () => {
+    $('.map').html('https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A37905b2b6a9c22e3ce9015b5f24709b1ecc9a4c6b6d35ee0fae034cb27acab49&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false')
+  })*/
+
+
 });
 
 

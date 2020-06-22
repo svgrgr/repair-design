@@ -37,12 +37,19 @@
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0)
 
 @media screen and ( max-width: 760px )
+  body
+    background-color: $dark-mobile
+  
   .row
     flex-direction: column
     align-items: center
   .types
+    //margin-bottom: 30rem
+    background-color: $light
     &__card
       margin-bottom: 5rem
+      
+      
   .card
     &__text
       margin-left: 0
@@ -57,11 +64,13 @@
       padding-bottom: 2.7rem
       background-color: $dark-mobile
     &-title__heading
-      color: $light
+      color: $primary
+      font-size: 1.571rem
     &-title__heading_types
       color: $black
     &-title__text
       color: $light
+      font-size: 1rem
     &-title__text_center
       color: $light
     &-title__word::after
@@ -76,7 +85,7 @@
     &__form
       flex-direction: column
       width: 90%
-    &_input
+    &__input
       color: $light
       margin-bottom: 4.5rem
     &__policy-label
@@ -105,7 +114,11 @@
     left: 0
     top: 4.7rem
 
-  .types__card
+  
+  .col-50
+    width: 100%
+
+  .design-project
     margin-bottom: 20rem
           
 
@@ -132,11 +145,12 @@
       min-width: 22.86rem        
       margin-bottom: 1.85rem
   .footer
+    background: $dark-mobile
     &__form
       flex-direction: column
     &__button
       width: 100%
-      background: $dark-mobile
+      
   .footer__wrap
     background-color: $dark-mobile
 
@@ -147,6 +161,12 @@
     min-width: unset
   #policycheckbox2-error
     left: 0 
+
+  .header
+    background-color: $dark-mobile
+
+  .section-title__text_center
+    width: 100%
 
 @media screen and ( max-height: 690px )
   .hero
