@@ -272,6 +272,30 @@ $(document).ready(function () {
     event.target.playVideo();
   }
 
+
+  $(document).ready(function () {
+    /**
+     * При прокрутке страницы, показываем или срываем кнопку
+     */
+    $(window).scroll(function () {
+      // Если отступ сверху больше 50px то показываем кнопку "Наверх"
+      if ($(this).scrollTop() > 50) {
+        $('#button-up').fadeIn();
+      } else {
+        $('#button-up').fadeOut();
+      }
+    });
+
+    /** При нажатии на кнопку мы перемещаемся к началу страницы */
+    $('#button-up').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 500);
+      return false;
+    });
+
+  });
+
   /*$('.map').on('click', () => {
     $('.map').html('https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A37905b2b6a9c22e3ce9015b5f24709b1ecc9a4c6b6d35ee0fae034cb27acab49&amp;width=100%25&amp;height=465&amp;lang=ru_RU&amp;scroll=false')
   })*/

@@ -459,6 +459,29 @@ input.invalid {
   left: 0;
   top: 4.2rem; }
 
+#button-up {
+  display: none;
+  left: 0;
+  margin: 0;
+  position: fixed;
+  bottom: 50px;
+  outline: none;
+  width: 8rem;
+  color: #333333;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 0px 0 0 28px;
+  background: url(../images/icon-arrow-black-up.jpg) no-repeat 7px 11px #ffffff;
+  border-radius: 0 4px 4px 0;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  -o-border-radius: 0 4px 4px 0;
+  box-shadow: 0 2px 4px #999;
+  -webkit-box-shadow: 0 2px 4px #999;
+  -moz-box-shadow: 0 2px 4px #999;
+  -o-box-shadow: 0 2px 4px #999;
+  cursor: pointer; }
+
 .container {
   width: 85%;
   max-width: 1256px;
